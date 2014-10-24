@@ -1,0 +1,5 @@
+E:\project\DataSYNC\DataSYNC\DataSYNC.Model\bin\Debug\DataSYNC.Model.dll
+E:\project\DataSYNC\DataSYNC\DataSYNC.Model\bin\Debug\DataSYNC.Model.pdb
+E:\project\DataSYNC\DataSYNC\DataSYNC.Model\obj\Debug\DataSYNC.Model.csprojResolveAssemblyReference.cache
+E:\project\DataSYNC\DataSYNC\DataSYNC.Model\obj\Debug\DataSYNC.Model.dll
+E:\project\DataSYNC\DataSYNC\DataSYNC.Model\obj\Debug\DataSYNC.Model.pdb

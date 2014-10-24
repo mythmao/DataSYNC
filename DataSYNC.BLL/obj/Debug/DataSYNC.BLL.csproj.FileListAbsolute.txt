@@ -1,0 +1,11 @@
+E:\project\DataSYNC\DataSYNC\DataSYNC.BLL\bin\Debug\DataSYNC.BLL.dll
+E:\project\DataSYNC\DataSYNC\DataSYNC.BLL\bin\Debug\DataSYNC.BLL.pdb
+E:\project\DataSYNC\DataSYNC\DataSYNC.BLL\bin\Debug\DataSYNC.Model.dll
+E:\project\DataSYNC\DataSYNC\DataSYNC.BLL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\project\DataSYNC\DataSYNC\DataSYNC.BLL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.dll
+E:\project\DataSYNC\DataSYNC\DataSYNC.BLL\bin\Debug\DataSYNC.Model.pdb
+E:\project\DataSYNC\DataSYNC\DataSYNC.BLL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+E:\project\DataSYNC\DataSYNC\DataSYNC.BLL\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Data.xml
+E:\project\DataSYNC\DataSYNC\DataSYNC.BLL\obj\Debug\DataSYNC.BLL.csprojResolveAssemblyReference.cache
+E:\project\DataSYNC\DataSYNC\DataSYNC.BLL\obj\Debug\DataSYNC.BLL.dll
+E:\project\DataSYNC\DataSYNC\DataSYNC.BLL\obj\Debug\DataSYNC.BLL.pdb

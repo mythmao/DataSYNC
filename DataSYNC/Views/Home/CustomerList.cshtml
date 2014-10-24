@@ -1,0 +1,737 @@
+﻿@model IEnumerable<DataSYNC.Models.CustomerSearch>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>CustomerList</title>
+    <script src="~/Scripts/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var data = '[{"Gid":"6b9c1994-e1fe-4ff4-adf7-7ad93597e789","ID":108286,"CustomerID":306453,"CustomerPassportID":2014603462999,"CustomerCode":"S140507000024","CustomerName":"hsrsee","CustomerUserID":15099260001,"CustomerUserName":"hsrs","FullPinyin":null,"SimplePinyin":null,"Gender":1,"Birthday":"2014-05-09T00:00:00","CurSchoolID":412006,"CurSchoolName":"34中","Grade":23,"PriParentName":"23445","PriParentID":306454,"PriParentMobile":"18510149966","AllParents":null,"InquiryUserID":345440001,"InquiryUserName":"倪智","InquiryStaffID":33342,"InquiryPassportID":345440002,"InquiryJobPassportID":2000590002,"ManagerStaffID":58918,"ManagerPassportID":13227760002,"ManagerJobPassportID":2001130002,"ManagerUserID":13041530001,"ManagerName":"王绍丽","InsertStaffID":0,"InsertUserID":345440001,"InsertPassportID":345440002,"InsertStaffName":"倪智","InsertJobID":59,"InsertJobName":"校教育咨询师","InsertJobPassportID":2000590002,"Status":0,"AssetStatus":0,"InsertTime":"2014-05-07T16:20:26.99","BranchID":8,"BranchName":"北京分公司","BranchShortName":"北京","XDSchoolID":18,"XDSchoolName":"北京分公司方庄校区","XDSchoolShortName":"北京-方庄","HostID":0,"Mobile1":"13800138000","City":0,"OrgID":0,"OrgPath":null,"CommonCourseAmount":2.000,"SpecialCourseAmount":0.000,"LeftAssetValue":373.500,"TotalCourseAmount":2.000,"TotalOrderedCourseAmount":2.000,"TotalAssetCategory":0,"LastCourseTime":"2014-05-13T15:17:10.157","OperateTime":"2014-05-07T16:20:26.99","ContractStatus":0,"PayStatus":0,"ReturnTime":"0001-01-01T00:00:00","ReturnInfoItemCount":0,"ProductType":0,"CallType":0,"FromSys":1,"SourceInfo":0,"IsAssignTeacher":0,"ContactType":1,"SignUpdateTime":"2014-05-09T15:09:42.94","FromSysID":0,"OriginalFromSys":null,"StudentType":51,"TeachingPlaceID":18,"TeachingPlaceName":"北京分公司方庄校区","InquiryPlaceID":18,"InquiryPlaceName":"北京分公司方庄校区","SalePhase":3,"AddressDetail":"北京市0","PurchaseIntention":1,"NextReturnTime":"0001-01-01T00:00:00","CustomerType":1,"SourceSignStaffName":null,"FollowupNum":3,"SourceMainType":3162,"SourceMainValue":"地推","SourceSubType":425,"SourceSubValue":"高考备考","InsertJobType":6,"InsertJobTypeName":"校教育咨询部","LastFollowupTime":"2014-05-07T16:20:57.423","NextFollowupTime":"0001-01-01T00:00:00","CustomerLevel":1,"CustomerMobile":null,"InsertDepartID":18,"InsertDepartName":"北京分公司方庄校区","ClassEndState":0,"ClassEndDate":"0001-01-01T00:00:00","ReturnPrePassDate":"0001-01-01T00:00:00","LockType":0,"CustomerGroup":1,"TelJobPassprotID":0,"TelPassprotID":0,"TelStaffName":null,"TelStaffID":0,"TelJobID":0,"PotentialType":0,"VipType":0,"VipLevel":0,"DataSourceType":1,"Pretreatment":11,"HasRelation":0,"IsSubjectGroupSchool":false,"IsAssignSubjectGroup":false,"HasTeacher":0,"UnValidType":0,"HasExam":0,"LastModified":"AAAAAAAADB4="}]';
+            $("#btnPost").click(function () {
+                $.post("/home/UpdateCustomer", { "data": data }, function (result) {
+                    alert(result);
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Gid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerPassportID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerCode)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerUserID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerUserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FullPinyin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SimplePinyin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Birthday)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurSchoolID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurSchoolName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Grade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PriParentName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PriParentID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PriParentMobile)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AllParents)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InquiryUserID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InquiryUserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InquiryStaffID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InquiryPassportID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InquiryJobPassportID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ManagerStaffID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ManagerPassportID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ManagerJobPassportID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ManagerUserID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ManagerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsertStaffID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsertUserID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsertPassportID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsertStaffName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsertJobID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsertJobName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsertJobPassportID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AssetStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsertTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BranchID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BranchName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BranchShortName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.XDSchoolID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.XDSchoolName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.XDSchoolShortName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HostID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mobile1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.City)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrgID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrgPath)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CommonCourseAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SpecialCourseAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LeftAssetValue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalCourseAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalOrderedCourseAmount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalAssetCategory)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastCourseTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OperateTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContractStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PayStatus)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReturnTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReturnInfoItemCount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CallType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FromSys)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SourceInfo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsAssignTeacher)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContactType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SignUpdateTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FromSysID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OriginalFromSys)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StudentType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeachingPlaceID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TeachingPlaceName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InquiryPlaceID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InquiryPlaceName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SalePhase)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AddressDetail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PurchaseIntention)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NextReturnTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SourceSignStaffName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FollowupNum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SourceMainType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SourceMainValue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SourceSubType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SourceSubValue)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsertJobType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsertJobTypeName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastFollowupTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NextFollowupTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerLevel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerMobile)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsertDepartID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InsertDepartName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClassEndState)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ClassEndDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReturnPrePassDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LockType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerGroup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelJobPassprotID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelPassprotID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelStaffName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelStaffID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelJobID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PotentialType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VipType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VipLevel)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DataSourceType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pretreatment)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HasRelation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsSubjectGroupSchool)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsAssignSubjectGroup)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HasTeacher)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UnValidType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HasExam)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerPassportID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerUserID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerUserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FullPinyin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SimplePinyin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Birthday)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurSchoolID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurSchoolName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Grade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PriParentName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PriParentID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PriParentMobile)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AllParents)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InquiryUserID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InquiryUserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InquiryStaffID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InquiryPassportID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InquiryJobPassportID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ManagerStaffID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ManagerPassportID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ManagerJobPassportID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ManagerUserID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ManagerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsertStaffID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsertUserID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsertPassportID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsertStaffName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsertJobID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsertJobName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsertJobPassportID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AssetStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsertTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BranchID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BranchName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BranchShortName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.XDSchoolID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.XDSchoolName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.XDSchoolShortName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HostID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mobile1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrgID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrgPath)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CommonCourseAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SpecialCourseAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LeftAssetValue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalCourseAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalOrderedCourseAmount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalAssetCategory)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastCourseTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OperateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContractStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PayStatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReturnTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReturnInfoItemCount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProductType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CallType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FromSys)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SourceInfo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsAssignTeacher)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContactType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SignUpdateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FromSysID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OriginalFromSys)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StudentType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeachingPlaceID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeachingPlaceName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InquiryPlaceID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InquiryPlaceName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SalePhase)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AddressDetail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PurchaseIntention)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NextReturnTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SourceSignStaffName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FollowupNum)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SourceMainType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SourceMainValue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SourceSubType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SourceSubValue)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsertJobType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsertJobTypeName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LastFollowupTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NextFollowupTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerLevel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerMobile)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsertDepartID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.InsertDepartName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClassEndState)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ClassEndDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReturnPrePassDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LockType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerGroup)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelJobPassprotID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelPassprotID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelStaffName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelStaffID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TelJobID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PotentialType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VipType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VipLevel)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataSourceType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pretreatment)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HasRelation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsSubjectGroupSchool)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsAssignSubjectGroup)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HasTeacher)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UnValidType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HasExam)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+                @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+            </td>
+        </tr>
+    }
+    
+    </table>
+    <input type="button" id="btnPost" value="Post" />
+</body>
+</html>
