@@ -24,6 +24,9 @@ namespace DataSYNC.Controllers
             a = a ^ b;
             b = a ^ b;
             a = a ^ b;
+            //3.4  3.5  3.8  6.4    6.7     9.1  9.5   12.1    12.2    12.8
+            //xiaoming  yue
+            //xiaoqiang ri 
             return View();
         }
 
@@ -40,7 +43,7 @@ namespace DataSYNC.Controllers
 
             return View();
         }
-
+        
         public ActionResult ShowCustomer()
         {
             List<CustomerSearch> list = new List<CustomerSearch>();

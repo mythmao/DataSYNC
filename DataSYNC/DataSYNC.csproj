@@ -188,6 +188,22 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="BLLs\AssetObject.cs" />
+    <Compile Include="BLLs\AssignCourseObject.cs" />
+    <Compile Include="BLLs\ClassInfoObject.cs" />
+    <Compile Include="BLLs\CodeItemObject.cs" />
+    <Compile Include="BLLs\Common.cs" />
+    <Compile Include="BLLs\CustomerAssetObject.cs" />
+    <Compile Include="BLLs\CustomerSearchObject.cs" />
+    <Compile Include="BLLs\PeriodObject.cs" />
+    <Compile Include="BLLs\ProductAssignObject.cs" />
+    <Compile Include="BLLs\ProductClassPropertyObject.cs" />
+    <Compile Include="BLLs\ProductGradeObject.cs" />
+    <Compile Include="BLLs\ProductsBasicObject.cs" />
+    <Compile Include="BLLs\ProductsObject.cs" />
+    <Compile Include="BLLs\ProductSubjectObject.cs" />
+    <Compile Include="BLLs\StudentAssignCourseObject.cs" />
+    <Compile Include="BLLs\TableVersionObject.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -201,6 +217,7 @@
     <Compile Include="Models\ErrorFilterAttribute.cs" />
     <Compile Include="Models\ErrorHandler.cs" />
     <Compile Include="Models\IOperator.cs" />
+    <Compile Include="Models\ITableObject.cs" />
     <Compile Include="Models\Logs.cs" />
     <Compile Include="Models\LogsDAL.cs" />
     <Compile Include="Models\LogsFilterAttribute.cs" />
@@ -345,6 +362,9 @@
       <Project>{17cbe5bb-f88b-4de9-95c7-6a901eb41dd5}</Project>
       <Name>DataSYNC.Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

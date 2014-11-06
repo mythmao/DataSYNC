@@ -41,12 +41,24 @@
   <ItemGroup>
     <Compile Include="Asset.cs" />
     <Compile Include="AssignCourse.cs" />
+    <Compile Include="ClassInfo.cs" />
+    <Compile Include="CodeItem.cs" />
+    <Compile Include="CustomerAsset.cs" />
     <Compile Include="CustomerSearch.cs" />
     <Compile Include="Period.cs" />
     <Compile Include="ProductAssign.cs" />
+    <Compile Include="ProductClassProperty.cs" />
+    <Compile Include="ProductGrade.cs" />
+    <Compile Include="Products.cs" />
+    <Compile Include="ProductsBasic.cs" />
+    <Compile Include="ProductsSubject.cs" />
+    <Compile Include="ProductSubject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StudentAssignCourse.cs" />
     <Compile Include="TableVersion.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Service\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
