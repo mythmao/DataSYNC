@@ -47,6 +47,25 @@
     <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
       <HintPath>..\packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DataSYNC.BLL\Library\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data.Entity, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DataSYNC.BLL\Library\MySql.Data.Entity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DataSYNC.BLL\Library\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DataSYNC.BLL\Library\MySql.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.Entity" />
@@ -188,13 +207,16 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="BLLs\AsignCourseVoucherObject.cs" />
     <Compile Include="BLLs\AssetObject.cs" />
     <Compile Include="BLLs\AssignCourseObject.cs" />
     <Compile Include="BLLs\ClassInfoObject.cs" />
     <Compile Include="BLLs\CodeItemObject.cs" />
     <Compile Include="BLLs\Common.cs" />
+    <Compile Include="BLLs\CSRelationObject.cs" />
     <Compile Include="BLLs\CustomerAssetObject.cs" />
     <Compile Include="BLLs\CustomerSearchObject.cs" />
+    <Compile Include="BLLs\OrganizationObject.cs" />
     <Compile Include="BLLs\PeriodObject.cs" />
     <Compile Include="BLLs\ProductAssignObject.cs" />
     <Compile Include="BLLs\ProductClassPropertyObject.cs" />

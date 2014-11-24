@@ -37,6 +37,25 @@
     <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
       <HintPath>..\packages\EnterpriseLibrary.Data.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
     </Reference>
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data.Entity, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\MySql.Data.Entity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\MySql.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\DataSYNC\bin\Newtonsoft.Json.dll</HintPath>
@@ -50,12 +69,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsignCourseVoucherBLL.cs" />
     <Compile Include="AssetBLL.cs" />
     <Compile Include="AssignCourseBLL.cs" />
     <Compile Include="ClassInfoBLL.cs" />
     <Compile Include="CodeItemBLL.cs" />
+    <Compile Include="CSRelationBLL.cs" />
     <Compile Include="CustomerAssetBLL.cs" />
     <Compile Include="CustomerSearchBLL.cs" />
+    <Compile Include="OrganizationBLL.cs" />
     <Compile Include="PeriodBLL.cs" />
     <Compile Include="ProductAssignBLL.cs" />
     <Compile Include="ProductClassPropertyBLL.cs" />
@@ -79,6 +101,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Ext\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Library\MySql.Data.dll" />
+    <Content Include="Library\MySql.Data.Entity.dll" />
+    <Content Include="Library\MySql.Data.Entity.EF6.dll" />
+    <Content Include="Library\MySql.Web.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

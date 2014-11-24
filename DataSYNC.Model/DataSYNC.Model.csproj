@@ -39,12 +39,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsignCourseVoucher.cs" />
     <Compile Include="Asset.cs" />
     <Compile Include="AssignCourse.cs" />
     <Compile Include="ClassInfo.cs" />
     <Compile Include="CodeItem.cs" />
+    <Compile Include="CSRelation.cs" />
     <Compile Include="CustomerAsset.cs" />
     <Compile Include="CustomerSearch.cs" />
+    <Compile Include="Organization.cs" />
     <Compile Include="Period.cs" />
     <Compile Include="ProductAssign.cs" />
     <Compile Include="ProductClassProperty.cs" />
